@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="master.css" />
+    <title>Pip in de bib</title>
+</head>
+
+<body id="chooseBook">
+    <div id="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a href="./onderwerpenTwee.html">
+                    <img src="./assets/angle-left-solid 1.png" alt="back button">
+                    <p>Ga terug</p>
+                </a>
+            </div>
+            <div class="right-nav">
+                <a href="./index.html">
+                    <p>Terug naar begin</p>
+                    <img src="./assets/return.png" alt="return home button">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container onderwerpen">
+            <div class="header-text">
+                <h1>Laat je kind hier de leukste cover kiezen</h1>
+            </div>
+            <div class="books">
+                <img src="./assets/book1.png" alt="Book choice 1" onclick="selectImage(this)">
+                <img src="./assets/book2.png" alt="Book choice 2" onclick="selectImage(this)">
+                <img src="./assets/book3.png" alt="Book choice 3" onclick="selectImage(this)">
+                <img src="./assets/book4.png" alt="Book choice 4" onclick="selectImage(this)">
+                <img src="./assets/book5.png" alt="Book choice 5" onclick="selectImage(this)">
+            </div>
+            <div class="button">
+                <a href="./laatsteScherm.html"><button>Deze wil ik!</button></a>
+            </div>
+        </div>
+        <img class="girl-decoration" src="./assets/girlLookingUp.png" alt="Girl decoration">
+    </main>
+    <script>
+
+        function selectImage(img) {
+            // remove blue border from all images
+            const images = document.getElementsByTagName("img");
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.border = "5px solid transparent";
+            }
+
+            // add blue border to selected image
+            img.style.border = "4px solid #1E54A6";
+        }
+    </script>
+</body>
+
+</html>

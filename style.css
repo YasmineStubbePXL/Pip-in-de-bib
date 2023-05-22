@@ -1,12 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/grinched');
+
+
 body {
 	background: #D7EEFE;
-	color: #333;
-	font: 100% Arial, Sans Serif;
+	color: #333;	
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
 }
 
+/* CSS WOLKJES*/
 #background-wrap {
     bottom: 0;
 	left: 0;
@@ -17,7 +22,7 @@ body {
 	z-index: -1;
 }
 
-/* KEYFRAMES */
+/* keyframes */
 
 @-webkit-keyframes animateCloud {
     0% {
@@ -46,7 +51,7 @@ body {
     }
 }
 
-/* ANIMATIONS */
+/* animations */
 
 .x1 {
 	-webkit-animation: animateCloud 35s linear infinite;
@@ -98,7 +103,7 @@ body {
 	transform: scale(0.55);
 }
 
-/* OBJECTS */
+/* objects */
 
 .cloud {
 	background: #fff;
@@ -155,6 +160,7 @@ body {
 
 
 
+/* CSS YASMINE*/
 
 .onderwerpen {
 	display: flex;
@@ -248,3 +254,273 @@ flex-wrap: wrap;
 	width: 3%;
 }
 
+/* CSS NEILL*/
+
+
+body#chooseBook {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #E1F1FF;
+}
+
+body#chooseBook header, main {
+    z-index: 999;
+}
+ header {
+    height: 10%;
+}
+
+ header nav {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+header nav .left-nav,
+ header nav .right-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ header nav .left-nav a,
+ header nav .right-nav a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+ nav .left-nav a:hover,
+ nav .right-nav a:hover {
+    transform: scale(1.1);
+}
+
+ nav .left-nav a{
+    justify-content: flex-start;
+    font-size: 20px;
+    color: #1E54A6;
+}
+
+ nav .right-nav a {
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #000;
+}
+
+nav .left-nav img {
+    width: 18px;
+    height: 36px;
+}
+
+nav .right-nav img {
+    width: 20px;
+    height: 20px;
+}
+
+body#chooseBook main {
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+body#chooseBook main .container {
+    height: 90%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body#chooseBook main .container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+body#chooseBook main .container div:first-child {
+    margin-bottom: 0px;
+}
+
+body#chooseBook main .container .books{
+    width: 75%
+}
+
+body#chooseBook main .container .books img{
+    width: 15%;
+    transition: 0.3s ease;
+    border: 4px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+body#chooseBook main .container .books img:hover{
+    transform: scale(1.05);
+}
+
+body#chooseBook main .container .books img:nth-child(even){
+    margin-top: 10%;
+}
+
+body#chooseBook main .container h1 {
+    text-align: center;
+	font-size: 50px;
+	color: #1E54A6;
+}
+
+body#chooseBook main .container .button a button {
+    width: 160px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1EA62C;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s ease;
+    cursor: pointer;
+	font-family: 'poppins';
+} 
+
+body#chooseBook main .container .button a button:hover {
+    transform: scale(1.1);
+} 
+
+body#chooseBook main .girl-decoration {
+    position: absolute;
+    height: 35%;
+    bottom: -0.5%;
+    right: 5%;
+}
+
+
+/* CSS SENNE*/
+.laatstepagina_titel {
+	width: 80%;
+	text-align: center;
+	font-size: 50px;
+	
+	font-family: 'poppins';
+	color: #1E54A6;
+	margin-bottom: -200px;
+}
+.knopstart{
+	background-color: #1EA62C;
+	color: #fff;
+	border-radius: 30px;
+	border: none;	
+	font-family: "Poppins", sans-serif;
+	font-size: 24px;
+	font: weight 400px;
+	padding: 20px 50px 20px 50px;
+	
+}
+.laatstepagina_alignment {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.laatstepagina_alignment div.titelbox {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+.laatstepagina_alignment div.kast {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.laatstepagina_alignment div.kast img{
+	margin-top: 250px;
+	width: 25%;
+}
+.laatstepagina_alignment div.knopbox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.laatstepagina_alignment div.knopbox button {
+	margin-top: 70px;
+}
+
+
+/* CSS ROBBE*/
+.bodyIndex {
+	overflow-y: hidden;
+}
+header {
+    height: 10%;
+}
+
+.talennav {
+	justify-content: end;
+}
+
+header nav .talen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+	margin-top: 50px;
+
+}
+
+nav .talen img {
+	width: 100%;
+}
+header nav .talen a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+nav .talen a {
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #000;
+}
+
+#dieren {
+    position: absolute;
+    top: 0%;
+    width: 60%;
+
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(10%);
+	font-family: 'poppins';
+}
+
+#title h1{
+    font-family: 'Grinched';
+    font-size: 125px;
+    color: #1E54A6;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#title p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#pip{
+    position: absolute;
+    bottom: -6%;
+    right: 0;
+}
